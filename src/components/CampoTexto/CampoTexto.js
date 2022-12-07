@@ -2,10 +2,11 @@ import './CampoTexto.css'
 
 function CampoTexto(props){
 
+
     return(
         <div className="campo-texto">
             <label>{props.label}</label>
-            <input placeholder={props.placeholder}/> 
+            <input required={props.obrigatorio} placeholder={props.placeholder}/> 
 
         </div>
     )
@@ -13,3 +14,6 @@ function CampoTexto(props){
 
 
 export default CampoTexto;
+
+
+

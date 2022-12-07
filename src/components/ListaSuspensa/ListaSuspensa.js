@@ -1,11 +1,15 @@
+import './ListaSuspensa.css'
+
 function ListaSuspensa(props){
     
-    
     return(
-        <div>
+        <div className="Lista-suspensa">
             <label>{props.label}</label>
-            <select>
-                <option>1</option>
+          
+            <select required={props.required}>
+                {props.itens.map(item => {
+                    return <option key={item}>{item}</option>
+                })}
 
              </select>
 
